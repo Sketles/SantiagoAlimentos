@@ -57,3 +57,10 @@ body {
   .footer p{
       font-size: 18px;
   }
+=======
+
+.piepagina{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+}
