@@ -20,49 +20,69 @@
     
                     <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Registrar Usuario</p>
     
-                    <form class="mx-1 mx-md-4">
-    
+                    <form class="mx-1 mx-md-4 needs-validation" novalidate>
+
                       <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="p-1">
+                          <img src="iconos/usuario.png" alt="16" width="16" style="float: left;">
+                        </div>
                         <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
-                          <input type="text" id="nombre" class="form-control" />
-                          <label class="form-label" for="form3Example1c">Tu nombre</label>
+                          <input placeholder="Nombre" type="text" id="nombre" class="form-control" required />
+                          <div class="invalid-feedback">
+                            Escribe tu nombre
+                          </div>
                         </div>
                       </div>
     
                       <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="p-1">
+                          <img src="iconos/correo.png" alt="16" width="16" style="float: left;">
+                        </div>
                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
-                          <input type="email" id="correo" class="form-control" />
-                          <label class="form-label" for="form3Example3c">Tu correo</label>
+                          <input placeholder="Correo" type="email" id="correo" class="form-control" required/>
+                          <div class="invalid-feedback">
+                            Ingresa un correo
+                          </div>
                         </div>
                       </div>
     
                       <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="p-1">
+                          <img src="iconos/contraseña.png" alt="16" width="16" style="float: left;">
+                        </div>
                         <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
-                          <input type="password" id="contraseña" class="form-control" />
-                          <label class="form-label" for="form3Example4c">Contraseña</label>
+                          <input placeholder="Contraseña" type="password" id="contraseña" class="form-control" required/>
+                          <div class="invalid-feedback">
+                            Ingresa una contraseña
+                          </div>
                         </div>
                       </div>
     
                       <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="p-1">
+                          <img src="iconos/contraseña2.png" alt="16" width="16" style="float: left;">
+                        </div>
                         <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
-                          <input type="password" id="contraseña2" class="form-control" />
-                          <label class="form-label" for="form3Example4cd">Repite la contraseña</label>
+                          <input placeholder="Repite la contraseña" type="password" id="contraseña2" class="form-control" required/>
+                          <div class="invalid-feedback">
+                            Ingresa una contraseña 
+                          </div>
                         </div>
                       </div>
 
                       <div class="form-check d-flex mb-5">
-                        <input class="form-check-input me-2" type="checkbox" value="" id="terminocondiciones" />
+                        <input class="form-check-input me-2" type="checkbox" value="" id="terminocondiciones" required/>
                         <label class="form-check-label" for="form2Example3">
                         Acepto los  <a href="#!">Terminos de servicios</a>
                         </label>
                       </div>
 
                       <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                        <button type="button" class="btn btn-primary btn-lg" id="validar">Registrarce</button>
+                        <button type="submit" class="btn btn-primary btn-lg" id="validar">Registrarse</button>
                       </div>
     
                     </form>
