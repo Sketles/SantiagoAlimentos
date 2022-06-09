@@ -1,2 +1,4 @@
 # SantiagoAlimentos
-Proyecto ing software
+==================================
+Proyecto de ingenieria de software
+==================================
