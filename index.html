@@ -3,13 +3,14 @@
   <head>
     <title>Santiago Alimentos</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
-  <body>
+  <body class="fondo">
       
-    <nav class="navbar navbar-expand-lg navbar-light bg-light container">
-      <a class="navbar-brand" href="index.html"><img src="Iconos/PaginaLogo.png" width="150"></a>
+    <nav class="navbar navbar-expand-lg navbar-light container fondonavbar">
+      <a class="navbar-brand" href="index.html"><img src="Iconos/logo_transparent.png" width="190"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,7 +21,7 @@
             <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pre-armados.html">Computadores Gaming</a>
+            <a class="nav-link" href="pre-armados.html">Catalogo</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Componentes</a>
@@ -47,31 +48,58 @@
 
 
 
+    <!-- CARRUSEL EN PROCESO... -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="catalogo.html"><img class="d-block w-100" src="img/PlatillosPrincipal.jpg" alt="BANNER-Oferta-1"></a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="catalogo.html"><img class="d-block w-100" src="Banners-img/baner-perifericos.jpg" alt="BANNER-Oferta-2"></a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="catalogo.html"><img class="d-block w-100" src="Banners-img/baner-pcgamer.png" alt="BANNER-Oferta-3"></a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+    <!-- FIN CARRUSEL EN PROCESO... -->
 
 
+    
 
-
-
-
-
+    <!-- PIE DE PAGINA -->
     <footer class="piepagina">
       <div class="container-fluid text-center">
         <div class="row text-white alto align-items-center ">
           <div class="col-sm-2">
             <!--ESPACIO-->
           </div>
+
           <div class="col-sm-2">
-            <img src="logos-img/logoprincipal.png" width="200">
-            <p class="py-5">Encuentra los mejores artículos Gamers para potenciar tu PC. Compra Online y recíbelo en tu domicilio!</p>
+            <img src="Iconos/PaginaLogo.png" width="200">
+          <p class="py-5">Restaurante Especializado</p>
           </div>
     
           <div class="col-sm-2">
-            <h5 class="py-5">Informacion</h5>
+            <h5 class="py-5">Información</h5>
             <a href="quienes-somos.html"><p class="colorchange">Quienes Somos</p></a>
-            <a href="termino-y-condiciones.html"><p class="colorchange">Terminos y condiciones</p></a>
-            <a href="politica-de-reembolso.html"><p class="colorchange">Politica de reembolso</p></a>
-    
-            
+            <a href="termino-y-condiciones.html"><p class="colorchange">Términos y condiciones</p></a>
+            <a href="politica-de-reembolso.html"><p class="colorchange">Política de reembolso</p></a>
           </div>
     
           <div class="col-sm-2">
@@ -84,15 +112,11 @@
           </div>
     
           <div class="col-sm-2">
-            <h5 class="py-5">Contacto</h5>
-            <a href="https://www.facebook.com/"><img src="Logos-img/Redes Sociales/facebook.png" width="50"></a>
-            <a href="https://www.instagram.com/"><img src="Logos-img/Redes Sociales/instagram.png" width="50"></a>
-            <a href="https://www.whatsapp.com/?lang=es"><img src="Logos-img/Redes Sociales/whatsapp.png" width="50"></a>
-            <div class="py-3">
-              <p>Reclamos@pbuild.com</p>
-              <a href="contacto.html">Contactanos</a>
-            </div>
+            <h5 class="py-5">Contáctanos</h5>
+            <a href="https://www.instagram.com/"><img src="Iconos/instagram.png" width="50"></a>
+            <a href="https://www.whatsapp.com/?lang=es"><img src="Iconos/whatsapp.png" width="50"></a>
           </div>
+
           <div class="col-sm-2">
             <!--ESPACIO-->
           </div>
@@ -100,15 +124,16 @@
       </div>
     </footer>
     
+        <!-- PIE DE PAGINA (COPRYRIGHT) -->
         <div class="container-fluid bg-dark align-items-center text-center text-white Copyright ">
-            <div class="row align-items-center">
+          <div class="row align-items-center">
             <div class="col-12">
-                <p>© Copyright Ultimate - Todos los derechos reservados para P-build 2022</p>
-                
+              <p>© Copyright - Todos los derechos reservados para Santiago Alimentos</p>
             </div>
-            </div>
+          </div>
         </div>
 
+    <!-- FINAL DE LA PAGINA -->      
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
